@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'HakgyoansimBombanghakR';
+    font-style: 'normal';
+    font-weight: 400;
+    src: url(./HakgyoansimBombanghakR.ttf);
+}
+/* witdh : 360 | height : 640 */

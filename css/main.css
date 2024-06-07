@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'HakgyoansimBombanghakR';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./HakgyoansimBombanghakR.ttf');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'notosanskr', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#wrap {
+    width: 100vw; /* 변경 */
+    max-width: 500px; /* 변경: 최대 너비 500px로 제한 */
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding-bottom: 13.333vh; /* 변경: Footer 높이를 vw로 조정 */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.778vw; /* 변경 */
+}
+
+header h1 {
+    font-family: 'HakgyoansimBombanghakR', sans-serif;
+    font-size: 6.667vw; /* 변경 */
+    margin: 0;
+}
+
+header nav img {
+    width: 3.333vw; /* 변경 */
+    margin-left: 1.389vw; /* 변경 */
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 26.667vh; /* 변경 */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide h2 {
+    position: absolute;
+    bottom: 1.667vw; /* 변경 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    font-size: 6.667vw; /* 변경 */
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1.389vw 2.778vw; /* 변경 */
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 5.556vw 0; /* 변경 */
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category img {
+    width: 11.111vw; /* 변경 */
+    height: 11.111vw; /* 변경 */
+}
+
+.category p {
+    margin: 0.694vw 0 0; /* 변경 */
+    font-size: 2.222vw; /* 변경 */
+}
+
+.courses {
+    padding: 5.556vw 2.778vw; /* 변경 */
+}
+
+.courses h3 {
+    margin: 1.389vw 0; /* 변경 */
+    font-size: 3.333vw; /* 변경 */
+}
+
+.course-circles {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.389vw 0; /* 변경 */
+}
+
+.circle {
+    width: 22.222vw; /* 변경 */
+    height: 22.222vw; /* 변경 */
+    border: 0.556vw solid #000; /* 변경 */
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vh 0;
+    border-top: 0.2vh solid #000;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background: #fff;
+    box-shadow: 0 -0.4vh 1vh rgba(0,0,0,0.1);
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-item img {
+    width: 6vw;
+    height: 6vw;
+}
+
+.footer-item p {
+    margin: 1vh 0 0;
+    font-size: 2.5vw;
+}

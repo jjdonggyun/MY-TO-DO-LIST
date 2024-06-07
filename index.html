@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TO DO LIST</h1>
+        <div class="todo-input">
+            <input type="text" id="new-task" placeholder="할 일을 입력하세요">
+            <button id="add-task-button">추가</button>
+        </div>
+        <div class="calendar">
+            <h2>달력</h2>
+            <div class="calendar-navigation">
+                <button id="prev-month" class="nav-button">이전</button>
+                <select id="month-select" class="nav-select"></select>
+                <select id="year-select" class="nav-select"></select>
+                <button id="next-month" class="nav-button">다음</button>
+            </div>
+            <div id="calendar"></div>
+        </div>
+        <div class="todo-list">
+            <h2 id="selected-date-title">선택된 날짜의 할 일</h2>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
